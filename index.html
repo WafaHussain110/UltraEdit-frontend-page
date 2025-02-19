@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraEdit</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+    </style>
+    <style>
+        .logo img {
+            height: 50px;
+            margin: 5px 40px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* position: sticky; */
+        }
+
+
+        .right ul {
+            display: flex;
+            list-style: none;
+            gap: 50px;
+            font-family: "Baloo Bhai 2", sans-serif;
+            font-size: large;
+            margin: 5px 40px;
+
+        }
+
+        li svg {
+            height: 22px;
+            /* width: 1; */
+            width: 27px;
+
+
+        }
+
+        .right ul li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right ul li span {
+            margin: 5px;
+        }
+
+        .first {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 23px;
+            margin: 70px;
+        }
+
+        .first p {
+            font-size: 20px;
+            width: 40vw;
+            text-align: center;
+            font-family: sans-serif;
+            /* border: 2px solid; */
+        }
+
+        .first span {
+            font-size: 45px;
+            flex-direction: column;
+            font-family: sans-serif;
+
+        }
+
+        .first span>img {
+            margin: 0 34px;
+            width: 82px;
+
+        }
+
+        .first .btn {
+            padding: 10px 23px;
+            border-radius: 34px;
+            background-color: #00b6d1;
+            color: #ffff;
+            /* color: wheat; */
+            border: none;
+            margin: 12px 0;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .second {
+            margin: auto;
+            max-width: 75vw;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 23px;
+        }
+
+        .items {
+            text-align: center;
+            font-weight: 600;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva;
+            border-radius: 10px;
+            padding: 35px;
+            background-color: aliceblue;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .items button {
+            padding: 10px 23px;
+            border-radius: 13px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            background-color: #00b6d1;
+            color: white;
+            font-weight: 700;
+        }
+
+        .item-lang {
+            padding-bottom: 35px
+        }
+
+        /* .download img {
+            margin: 0 12px;
+            /* font-size: 30px; */
+
+
+        .download :nth-child(2) {
+
+            font-size: 23px;
+        }
+
+        /* .dowload {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-family: sans-serif; 
+        } */
+        .download {
+            display: flex;
+            gap: 10px;
+            font-family: sans-serif;
+            align-items: center;
+        }
+
+        .small {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"> <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>For Business</span> <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li><span>Resources</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>Support</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>Our Company</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></li>
+                    <!-- <li>Producs</li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="first">
+            <span>
+                Download <b>UltraEdit</b> for windows <img
+                    src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="">
+            </span>
+            <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
+                editor.</p>
+            <div>
+                <button class="btn">DOWNLOAD MAC OR LINUX VERSION</button>
+            </div>
+        </div>
+
+        <div class="second">
+            <!-- <div class="download" display: flex; align-items: center; font-family: sans-serif; gap: 10px;><img
+                    src="https://www.ultraedit.com/wp-content/uploads/2022/11/UE.png" alt=""><span>Download
+                    UltraEdit</span><span class="small">
+                    v2023.1(released 08/16/2023) | Hotfix</span></div> -->
+            <div class="download">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2022/11/UE.png" alt="">
+                <span>Download UltraEdit</span>
+                <span class="small">v2023.1(released 08/16/2023) | Hotfix</span>
+            </div>
+            <div class="grid">
+                <div class="items">
+                    <div class="item-lang">English</div>
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+
+                </div>
+                <div class="items">
+                    <div class="item-lang">German</div>
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="items">
+                    <div class="item-lang">Italian</div>
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="items">
+                    <div class="item-lang">Spanish</div>
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="items">
+                    <div class="item-lang">French</div>
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="items">
+                    <div class="item-lang">Brazilian Portguese</div>
+
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="items">
+                    <div class="item-lang">Japanese</div>
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="items">
+                    <div class="item-lang">Korean</div>
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+                <div class="items">
+                    <div class="item-lang">Chinese</div>
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+            </div>
+            <!-- <div class="items">Traditional Chinese</div> -->
+        </div>
+    </main>
+</body>
+
+</html>
